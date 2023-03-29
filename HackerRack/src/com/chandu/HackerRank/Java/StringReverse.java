@@ -1,5 +1,9 @@
 package com.chandu.HackerRank.Java;
 
+/****
+@Author Chandu
+*****/
+
 import java.util.Scanner;
 
 public class StringReverse {
