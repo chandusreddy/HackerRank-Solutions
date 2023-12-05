@@ -16,7 +16,7 @@ public class ArraysMain {
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader bufferReader = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bufferWriteer = new BufferedWriter(new OutputStreamWriter(System.out));
+		BufferedWriter bufferWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		int arrCount = Integer.parseInt(bufferReader.readLine().trim());
 
@@ -26,10 +26,10 @@ public class ArraysMain {
 		// Calling Reverse_Array 
 		List<Integer> res = Arrays_Reverse.reverseArray(arr);
 
-		bufferWriteer.write(res.stream().map(Object::toString).collect(joining(" ")) + "\n");
+		bufferWriter.write(res.stream().map(Object::toString).collect(joining(" ")) + "\n");
 
 		bufferReader.close();
-		bufferWriteer.close();
+		bufferWriter.close();
 	}
 
 }
